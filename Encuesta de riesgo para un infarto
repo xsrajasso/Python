@@ -1,0 +1,87 @@
+#Prevención y atención de un infarto
+
+print("AVERIGUA TU PROBABILIAD DE INFARTO")
+
+print("PREGUNTA #1")
+print("¿Cuál es tu sexo?")
+print("Escribe 1 si eres Hombre, escribe 0 si eres mujer")
+A = input()
+
+print("PREGUNTA #2")
+print("¿Qué edad tienes?")
+print("Escribe cuantos años que tienes")
+B = input()
+
+print("PREGUNTA #3")
+print("¿Tienes sobrepeso u obesidad?")
+print("Si tu respuesta es sí escribe 1, si tu respuesta es no escribe 0")
+C = input()
+
+print("PREGUNTA #4")
+print("¿Tienes Diabetes?")
+print("Si tu respuesta es si escribe 1, si tu respuesta es no escribe 0")
+D = input()
+
+print("PREGUNTA #5")
+print("¿Fuma o consume algún tipo de droga?")
+print("Si tu respuesta es sí escribe 1, si tu respuesta es no escribe 0")
+E = input()
+
+print("PREGUNTA #6")
+print("¿Ha tenido presión, colesterol o azúcar altos?")
+print("Si tu respuesta es sí escribe 1, si tu respuesta es no escribe 0")
+F = input()
+
+print("PREGUNTA #7")
+print("¿Tiene familia con antecedentes de ataques cardiacos?")
+print("Si tu respuesta es sí escribe 1, si tu respuesta es no escribe 0")
+G = input()
+
+print("PREGUNTA #8")
+print("¿Hace ejercicio al menos 4 días por semana?")
+print("Si tu respuesta es sí escribe 1, si tu respuesta es no escribe 0")
+H = input()
+
+print("PREGUNTA #9")
+print("¿Está expuesto a situaciones de estrés comúmnente?")
+print("Si tu respuesta es sí escribe 1, si tu respuesta es no escribe 0")
+I = input()
+
+print("PREGUNTA #10")
+print("¿Tiene o ha tenido depresión?")
+print("Si tu respuesta es sí escribe 1, si tu respuesta es no escribe 0")
+J = input()
+
+
+A = int(A)
+B = int(B)
+C = int(C)
+D = int(D)
+E = int(E)
+F = int(F)
+G = int(G)
+H = int(H)
+I = int(I)
+J = int(J)
+
+#Valor de B
+if B >= 46:
+    B = 2
+elif B <= 45:
+    B = 1
+
+suma = A+B+C+D+E+F+G+H+I+J
+#print(suma)
+suma = int(suma)
+#Valor máximo es 12, mínimo es 0
+
+
+if suma >= 9:
+    print("Su probabilidad es alta")
+    print("ES NECESARIO QUE CONSULTE A UN ESPECIALISTA DE INMEDIATO")
+elif suma >= 5:
+    print("Su probabilidad es mediana")
+    print("ACUDA A UN CENTRO MÉDICO PARA UNA ATENCIÓN MÁS PRECISA")
+elif suma >= 0:
+    print("Su probabilidad es baja")
+    print("CONSULTE A SU MÉDICO PERIODICAMENTE PARA CONSERVAR SU SALUD")
